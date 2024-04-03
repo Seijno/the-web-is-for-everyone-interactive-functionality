@@ -9,9 +9,11 @@ app.set('views', './views')
 app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 
+let sdgChosen = []
+
 const apiUrl = 'https://fdnd-agency.directus.app/items'
 const sdgData = await fetchJson(apiUrl + '/hf_sdgs')
-console.log(sdgData.data)
+// console.log(sdgData.data)
 
 app.get('/', (request, response) =>  {
     fetchJson(apiUrl + '/hf_sdgs').then((sdgData) =>{
@@ -20,6 +22,10 @@ app.get('/', (request, response) =>  {
 
     })
 })
+})
+app.post('/', (request, response) =>{
+  sdgChosen.push(request.body.joep)
+  response.redirect(303, '/')
 })
 
 
