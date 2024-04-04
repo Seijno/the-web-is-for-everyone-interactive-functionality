@@ -1,3 +1,4 @@
+/* basis styling */
 body{
     --background: #272932;
     --text: #ecf8f8;
@@ -99,6 +100,7 @@ ul{
     scale: 1.2;
 }
 
+/* terug button styling */
 .return{
     position: absolute;
     top: 0;
