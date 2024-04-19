@@ -6,14 +6,14 @@
 <main>
     <form action="/" method="POST">
         <ul>
-<% sdgs.forEach(sdg => { %>
+        <% sdgs.forEach(sdg => { %>
         <li>
             <label>
                 <input class="choose" type="checkbox" name="<%= sdg.title %>" value="<%= sdg.id %>">
                 <img src="https://fdnd-agency.directus.app/assets/<%= sdg.icon %>" alt="<%= sdg.id %>. <%= sdg.title %>">
             </label>
         </li>
-<% }); %>
+        <% }); %>
         </ul>
         <input class="submitBtn" type="submit" value="Verder">
     </form>
