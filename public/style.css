@@ -100,6 +100,27 @@ ul{
     scale: 1.2;
 }
 
+  /*accessibility*/
+[type=checkbox]:focus ~ img{
+    border: 2px solid white;
+
+}
+
+.submitBtn:focus{
+    background: var(--subTitles);
+    transition: 0.4s;
+    scale: 1.2;
+}
+img{
+    background: grey;
+}
+
+.return:focus{
+
+    text-decoration: underline;
+    transform: 1s;
+}
+
 /* terug button styling */
 .return{
     position: absolute;

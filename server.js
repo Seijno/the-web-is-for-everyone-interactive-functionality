@@ -10,6 +10,8 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 
 let sdgChosen = []
+const companyId = 1
+const stakeholderId = 7
 
 const apiUrl = 'https://fdnd-agency.directus.app/items'
 const sdgData = await fetchJson(apiUrl + '/hf_sdgs')
@@ -24,7 +26,7 @@ app.get('/', (request, response) =>  {
 })
 })
 app.post('/', (request, response) =>{
-  sdgChosen.push(request.body.joep)
+  console.log(request.body)
   response.redirect(303, '/')
 })
 
