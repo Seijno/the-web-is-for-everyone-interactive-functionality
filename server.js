@@ -10,8 +10,6 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 
 let sdgChosen = []
-const companyId = 1
-const stakeholderId = 7
 
 const apiUrl = 'https://fdnd-agency.directus.app/items'
 const sdgData = await fetchJson(apiUrl + '/hf_sdgs')
