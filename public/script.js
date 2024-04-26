@@ -1,3 +1,6 @@
+const appear = document.querySelector(".quantityChoice");
+appear.style.display = 'block';
+
 function checked(){
     document.getElementById('selected').innerHTML = getCheckboxCount();
   }

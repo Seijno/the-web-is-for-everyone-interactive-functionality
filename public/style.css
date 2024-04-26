@@ -137,6 +137,10 @@ img{
     border: 1px solid white;
 }
 
+.quantityChoice{
+    display: none;
+}
+
 /* terug button styling */
 .turnLeft{
     position: absolute;
